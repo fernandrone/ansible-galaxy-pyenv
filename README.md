@@ -1,4 +1,4 @@
-avanov.pyenv
+fernandrone.ansible_galaxy_pyenv
 ============
 
 [![Build Status](https://travis-ci.org/avanov/ansible-galaxy-pyenv.svg)](https://travis-ci.org/avanov/ansible-galaxy-pyenv)
@@ -9,7 +9,7 @@ Ansible Galaxy role for [pyenv](https://github.com/yyuu/pyenv) on Ubuntu / RedHa
 Install it with the following command:
 
 ```bash
-$ ansible-galaxy install avanov.pyenv
+$ ansible-galaxy install fernandrone.ansible_galaxy_pyenv
 ```
 
 Requirements
@@ -43,7 +43,7 @@ Example Playbook
 
     - hosts: servers
       roles:
-         - role: avanov.pyenv
+         - role: fernandrone.ansible_galaxy_pyenv
            pyenv_path: "{{ home }}/pyenv"
            pyenv_owner: "{{ instance_owner }}"
            pyenv_global: "3.6.5"
