@@ -31,6 +31,7 @@ Here is the list of all variables and their default values:
 * ``pyenv_update_git_install: no``
 * ``pyenv_enable_autocompletion: no``
 * ``pyenv_setting_path: "{% if pyenv_env == 'user' %}~/.bashrc{% else %}/etc/profile.d/pyenv.sh{% endif %}"``
+* ``pyenv_autocompletion_shell: bash``
 
 Dependencies
 ------------
@@ -47,7 +48,8 @@ Example Playbook
            pyenv_owner: "{{ instance_owner }}"
            pyenv_global: "3.6.5"
            pyenv_update_git_install: no
-           pyenv_enable_autocompletion: no
+           pyenv_enable_autocompletion: yes
+           pyenv_autocompletion_shell: zsh
            pyenv_python_versions:
              - "3.6.5"
              - "3.4.1"
