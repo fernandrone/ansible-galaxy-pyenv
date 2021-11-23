@@ -1,7 +1,4 @@
 ---
-- include: custom_facts.yml
-  become: true
-
 - include: Darwin.yml
   when: ansible_os_family == "Darwin"
 
